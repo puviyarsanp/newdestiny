@@ -16,7 +16,6 @@
     <script src="https://kit.fontawesome.com/dbc5c60f69.js" crossorigin="anonymous"></script>
     <script src="js/flipclock.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
   </head>
   <body>
@@ -42,18 +41,16 @@
             </div>
           </div>
         </div>
+            <script type="text/javascript">
+              var date = new Date(2020, 06, 21);
+              var now = new Date();
+              var diff = (date.getTime()/1000) - (now.getTime()/1000);
 
-        <script type="text/javascript">
-          var date = new Date(2020, 06, 21);
-          var now = new Date();
-          var diff = (date.getTime()/1000) - (now.getTime()/1000);
-
-          var clock = $('.clock').FlipClock(diff,{
-          clockFace: 'DailyCounter',
-          countdown: true
-            });
-        </script>
-
+              var clock = $('.clock').FlipClock(diff,{
+              clockFace: 'DailyCounter',
+              countdown: true
+                });
+            </script>
       </div>
     </div>
 
@@ -68,7 +65,7 @@
         <div class="col-md-6">
           <p class="copy">Copyright 2020 ©
             <a href="https://newdestiny.in" target="_blank">newdestiny</a>. All rights reserved |
-            <a class="envlp" href="mailto:info@newdestiny.in?cc=newdestini@gmail.com&subject=Enquiry%20regarding%20Services%20#0022&body=I%20would%20like%20more%20information%20on%20Services%20#0022" target="_blank"><i class="fas fa-envelope"></i> info@newdestiny.in</a>
+            <a class="envlp" href="mailto:info@newdestiny.in?cc=newdestini@gmail.com" target="_blank"><i class="fas fa-envelope"></i> info@newdestiny.in</a>
           </p>
         </div>
         <div class="col-md-3 ">
@@ -76,12 +73,5 @@
         </div>
       </div>
     </div>
-  <script type="text/javascript">
-  $(document).ready(function() {
-  $('#mailbutton').click(function(event) {
-    window.location = "mailto:info@newdestiny.in";
-      });
-    });
-  </script>
 </body>
 </html>
