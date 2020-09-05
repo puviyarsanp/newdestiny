@@ -53,6 +53,11 @@ body {
   font-weight: lighter;
   text-shadow: 1px 1px #000;
 }
+.container p {
+  font-weight: lighter;
+  font-size: 8px;
+  text-shadow: 1px 1px #000;
+}
 .clock {
   padding-bottom: 30px;
   padding-top: 70px;
